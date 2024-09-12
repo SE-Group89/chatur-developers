@@ -5,13 +5,14 @@ to generate a random array using the 'rand' module.
 
 import rand
 
+
 def merge_sort(array):
     """
     Perform merge sort on the given array.
-    
+
     Args:
         array (list): The list of elements to be sorted.
-        
+
     Returns:
         list: A sorted list.
     """
@@ -23,14 +24,15 @@ def merge_sort(array):
     right_half = merge_sort(array[midpoint:])
     return recombine(left_half, right_half)
 
+
 def recombine(left_half, right_half):
     """
     Merge two sorted lists into a single sorted list.
-    
+
     Args:
         left_half (list): The first sorted list.
         right_half (list): The second sorted list.
-        
+
     Returns:
         list: A merged and sorted list.
     """
@@ -60,6 +62,7 @@ def recombine(left_half, right_half):
         merge_index += 1
 
     return merged_array
+
 
 # Generate a random array and sort it using merge sort
 array = rand.random_array([None] * 20)

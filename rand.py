@@ -5,6 +5,7 @@ using the 'shuf' command-line utility.
 
 import subprocess
 
+
 def random_array(arr):
     """
     Fill the provided array with random integers between 1 and 20.
