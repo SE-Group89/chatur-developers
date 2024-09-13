@@ -6,22 +6,22 @@ to generate a random array using the 'rand' module.
 import rand
 
 
-def merge_sort(array):
+def merge_sort(arr):
     """
-    Perform merge sort on the given array.
+    Perform merge sort on the given list.
 
     Args:
-        array (list): The list of elements to be sorted.
+        arr (list): The list of elements to be sorted.
 
     Returns:
         list: A sorted list.
     """
-    if len(array) <= 1:
-        return array
+    if len(arr) <= 1:
+        return arr
 
-    midpoint = len(array) // 2
-    left_half = merge_sort(array[:midpoint])
-    right_half = merge_sort(array[midpoint:])
+    midpoint = len(arr) // 2
+    left_half = merge_sort(arr[:midpoint])
+    right_half = merge_sort(arr[midpoint:])
     return recombine(left_half, right_half)
 
 
@@ -65,7 +65,7 @@ def recombine(left_half, right_half):
 
 
 # Generate a random array and sort it using merge sort
-array = rand.random_array([None] * 20)
-sorted_array = merge_sort(array)
+random_array = rand.random_array([None] * 20)
+sorted_array = merge_sort(random_array)
 
 print(sorted_array)
