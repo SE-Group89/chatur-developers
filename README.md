@@ -7,4 +7,6 @@ Homework-2 SE-Group89
 ![Static Badge](https://img.shields.io/badge/AGPL--3.0--License-darkblue)
 ![Static Badge](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=cyan)
 ![Static Badge](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=grey)
+[![Static Analysis and Test Cases](https://github.com/SE-Group89/natkhatdevelopers/actions/workflows/python-test.yml/badge.svg)](https://github.com/SE-Group89/chatur-developers/actions/workflows/python_test.yml)
+
 
