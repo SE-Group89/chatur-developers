@@ -34,8 +34,8 @@ def test_array_with_duplicates():
     """
     Test mergeSort with an array containing duplicate values.
     """
-    arr = [4, 1, 2, 2, 5, 3, 1]
+    arr = [8, 7, 3, 6, 4, 2, 1]
     sorted_arr = merge_sort(arr)
-    assert sorted_arr == [1, 1, 2, 2, 3, 4, 5], (
-        f"Test failed! Expected [1, 1, 2, 2, 3, 4, 5], got {sorted_arr}"
+    assert sorted_arr == [1, 2, 3, 4, 6, 7, 8], (
+        f"Test failed! Expected [1, 2, 3, 4, 6, 7, 8], got {sorted_arr}"
     )
